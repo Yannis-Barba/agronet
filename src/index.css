@@ -56,12 +56,13 @@ code {
 
 /* Page Anciens Stage */
 
-#ancienStage{
+.mapAndForm{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  border-bottom: solid 1px var(--secondary-color);
 }
 
 .map{
@@ -119,6 +120,46 @@ code {
   border-radius: var(--border-radius);
 }
 
+/* Ancien Stage */
+
+.stages{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; 
+  padding: 10px;
+  }
+
+.stage{
+  display: flex;
+  flex-direction: row;
+  border: solid 1px var(--secondary-color);
+  border-radius: var(--border-radius);
+  padding: 10px; 
+}
+
+.specialite{
+  display: flex;
+  justify-content: center;
+  border-right: solid 1px var(--secondary-color);
+  padding: 5px;
+}
+
+.specialite p {
+  writing-mode: sideways-lr;
+  text-orientation: sideways;
+}
+
+.stageContentContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.listInformations{
+  text-align: left;
+}
+
 /* Mobile Responsive */
 
 @media only screen and (max-width: 700px){
@@ -133,5 +174,9 @@ code {
   }
   .formContainer{
     width: 80vw;
+  }
+
+  .stages{
+    flex-direction: column;
   }
 }

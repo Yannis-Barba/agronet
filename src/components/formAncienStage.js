@@ -5,6 +5,10 @@ function FormAncienStage(){
         <div className="formContainer">
             <h2> Préférences </h2>
             <form className='formAncienStage'>
+                <label htmlFor="ecole"/>
+                <input id="ecole" placeholder="Ecole"/>
+                <label htmlFor="cursus"/>
+                <input id="cursus" placeholder="Cursus"/>
                 <label htmlFor="lieu"/>
                 <input id="lieu" placeholder="Lieu"/>
                 <label htmlFor="promotion"/>
