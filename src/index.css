@@ -1,6 +1,7 @@
 :root{
   --primary-color: #53AF80;
   --secondary-color: #AEA06E; 
+  --border-radius: 20px; 
 }
 
 body {
@@ -58,6 +59,8 @@ code {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .map{
@@ -79,23 +82,39 @@ code {
   display: flex;
   flex-direction: column;
   border: solid 1px var(--secondary-color);
-  height: 600px;
+  height: 60vh;
+  width: 20vw;
   margin: 20px;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-color);
 }
 
 .formAncienStage{
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+
+.formAncienStage input{
+  text-align: center;
+  border-radius: var(--border-radius);
+  padding: 5px;
 }
 
 /* Mobile Responsive */
 
 @media only screen and (max-width: 700px){
   #ancienStage{
-    flex-direction: column;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
   }
   .mapContainer{
     width: 80vw;
     height: 60vh;
+  }
+  .formContainer{
+    width: 80vw;
   }
 }
