@@ -1,6 +1,7 @@
 :root{
   --primary-color: #53AF80;
   --secondary-color: #AEA06E; 
+  --third-color: #E9D416 ;
   --border-radius: 20px; 
 }
 
@@ -81,11 +82,13 @@ code {
 .formContainer{
   display: flex;
   flex-direction: column;
+  gap: 20px; 
   border: solid 1px var(--secondary-color);
-  height: 60vh;
+  height: fit-content;
   width: 20vw;
   margin: 20px;
   padding: 10px;
+  padding-bottom: 30px;
   border-radius: var(--border-radius);
   background-color: var(--secondary-color);
 }
@@ -100,6 +103,20 @@ code {
   text-align: center;
   border-radius: var(--border-radius);
   padding: 5px;
+}
+
+.button{
+  width: fit-content;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.ajoutStageButton{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--third-color);
+  border-color: var(--third-color);
+  border-radius: var(--border-radius);
 }
 
 /* Mobile Responsive */
