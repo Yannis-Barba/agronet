@@ -51,3 +51,14 @@ code {
 .linksNavBar:hover{
   color: #4A926D;
 }
+
+.map{
+  border: solid 2px #53AF80;
+  width: fit-content;
+  margin: 20px;
+}
+
+.mapContainer{
+  width: 1000px;
+  height: 600px;
+}
