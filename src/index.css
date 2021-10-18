@@ -100,7 +100,7 @@ code {
   gap: 10px;
 }
 
-.formAncienStage input{
+.formAncienStage select{
   text-align: center;
   border-radius: var(--border-radius);
   padding: 5px;
