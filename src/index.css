@@ -21,7 +21,15 @@ code {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   border-bottom: solid 1px var(--secondary-color);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.agroNetTitle{
+  text-align: center;
+  color: var(--primary-color);
 }
 
 .linksContainer{
@@ -37,6 +45,7 @@ code {
 .linksNavBar{
   font-weight: bold;
   font-size: large;
+  text-decoration: none;
 }
 
 .linksNavBar:hover{
