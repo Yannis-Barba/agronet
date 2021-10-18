@@ -56,9 +56,30 @@ code {
   border: solid 2px #53AF80;
   width: fit-content;
   margin: 20px;
+  border-radius: 20px;
 }
 
 .mapContainer{
   width: 1000px;
   height: 600px;
+  border-radius: 20px;
+}
+
+#ancienStage{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  border: solid 1px var(--secondary-color);
+  height: 600px;
+  margin: 20px;
+}
+
+.formAncienStage{
+  display: flex;
+  flex-direction: column;
 }
