@@ -52,24 +52,28 @@ code {
   color: #4A926D;
 }
 
-.map{
-  border: solid 2px #53AF80;
-  width: fit-content;
-  margin: 20px;
-  border-radius: 20px;
-}
-
-.mapContainer{
-  width: 1000px;
-  height: 600px;
-  border-radius: 20px;
-}
+/* Page Anciens Stage */
 
 #ancienStage{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+.map{
+  border: solid 2px #53AF80;
+  width: fit-content;
+  height: fit-content;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.mapContainer{
+  width: 50vw;
+  height: 60vh;
+  border-radius: 20px;
+}
+
 
 .formContainer{
   display: flex;
@@ -82,4 +86,16 @@ code {
 .formAncienStage{
   display: flex;
   flex-direction: column;
+}
+
+/* Mobile Responsive */
+
+@media only screen and (max-width: 700px){
+  #ancienStage{
+    flex-direction: column;
+  }
+  .mapContainer{
+    width: 80vw;
+    height: 60vh;
+  }
 }
