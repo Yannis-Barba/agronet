@@ -9,9 +9,7 @@ function AncienStage(){
         <h1>Ancien Stage</h1>
         <div id="ancienStage">
             <div className="mapAndForm">
-            <Map />
             <FormAncienStage />
-            </div>
             <div className="stages">
                 <Stage/>
                 <Stage/>
@@ -22,6 +20,10 @@ function AncienStage(){
                 <Stage/>
                 <Stage/>
             </div>
+
+            </div>
+
+            <Map />
         </div>
         </>
     )

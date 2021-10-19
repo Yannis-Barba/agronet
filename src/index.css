@@ -1,4 +1,5 @@
 :root{
+  --background-color: #F3F4DF;
   --primary-color: #53AF80;
   --secondary-color: #AEA06E; 
   --third-color: #E9D416 ;
@@ -19,7 +20,11 @@ code {
     monospace;
 }
 
-.navBar{
+.App{
+  background-color: var(--background-color);
+}
+
+.navBar{ 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -27,6 +32,7 @@ code {
   border-bottom: solid 1px var(--secondary-color);
   padding-left: 20px;
   padding-right: 20px;
+  background-color: white;
 }
 
 .agroNetTitle{
@@ -82,11 +88,11 @@ code {
 
 .formContainer{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 20px; 
   border: solid 1px var(--secondary-color);
   height: fit-content;
-  width: 20vw;
+  width: fit-content;
   margin: 20px;
   padding: 10px;
   padding-bottom: 30px;
@@ -96,7 +102,7 @@ code {
 
 .formAncienStage{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
 }
 
@@ -134,9 +140,13 @@ code {
 .stage{
   display: flex;
   flex-direction: row;
-  border: solid 1px var(--secondary-color);
-  border-radius: var(--border-radius);
+  width: 400px;
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+  border-radius: 0px 20px 0px 20px;
+  /* border: solid 5px var(--primary-color);
+  border-radius: var(--border-radius); */
   padding: 10px; 
+  background-color:white;
 }
 
 .specialite{
@@ -190,5 +200,24 @@ code {
 
   .stages{
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 0;
+  }
+
+  .stage{
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .specialite{
+    border-right: unset;
+    border-bottom: solid 1px var(--secondary-color);
+  }
+
+  .specialite p {
+    writing-mode:unset;
+    text-orientation:unset;
   }
 }
