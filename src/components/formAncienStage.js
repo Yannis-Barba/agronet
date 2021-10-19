@@ -3,7 +3,7 @@ import React from 'react';
 function FormAncienStage(){
     return (
         <div className="formContainer">
-            <h2> Préférences </h2>
+            <h2 className="titleForm"> Préférences </h2>
             <form className='formAncienStage'>
                 <label htmlFor="ecole"/>
                 <select id="ecole" placeholder="Ecole">

@@ -62,13 +62,15 @@ code {
 
 /* Page Anciens Stage */
 
-.mapAndForm{
+.formAndStage{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   border-bottom: solid 1px var(--secondary-color);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .map{
@@ -89,31 +91,38 @@ code {
 .formContainer{
   display: flex;
   flex-direction: row;
-  gap: 20px; 
-  border: solid 1px var(--secondary-color);
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
   height: fit-content;
   width: fit-content;
-  margin: 20px;
-  padding: 10px;
   padding-bottom: 30px;
-  border-radius: var(--border-radius);
-  background-color: var(--secondary-color);
+  padding-left: 20px;
 }
 
 .formAncienStage{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
+}
+
+.titleForm{
+  color: var(--primary-color);
 }
 
 .formAncienStage select{
   text-align: center;
-  border-radius: var(--border-radius);
-  padding: 5px;
+  height: fit-content;
+  border-radius: 0px 5px 0px 5px;
+  padding: 3px;
+
 }
 
 .button{
   width: fit-content;
+  height: fit-content;
   padding: 5px;
   font-weight: bold;
 }

@@ -6,23 +6,20 @@ import Stage from '../components/stage';
 function AncienStage(){
     return (
         <>
-        <h1>Ancien Stage</h1>
         <div id="ancienStage">
-            <div className="mapAndForm">
-            <FormAncienStage />
-            <div className="stages">
-                <Stage/>
-                <Stage/>
-                <Stage/>
-                <Stage/>
-                <Stage/>
-                <Stage/>
-                <Stage/>
-                <Stage/>
+            <div className="formAndStage">
+                <FormAncienStage />
+                <div className="stages">
+                    <Stage/>
+                    <Stage/>
+                    <Stage/>
+                    <Stage/>
+                    <Stage/>
+                    <Stage/>
+                    <Stage/>
+                    <Stage/>
+                </div>
             </div>
-
-            </div>
-
             <Map />
         </div>
         </>
